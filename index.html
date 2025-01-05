@@ -1,0 +1,435 @@
+
+<title>Steve Albers' Planetary Maps (Global Images)</title>
+<center><h1>Planetary Maps (Global Images)</h1></center>
+
+<center><h3>by <em>Steve Albers</em></h3></center>
+
+This image processing outlined on this page
+has been done in part to provide "value-added" global planet & satellite images 
+to
+NOAA's
+<a href="https://sos.noaa.gov/Datasets/">
+Science On a Sphere</a><sup>&reg;</sup>
+project. 
+The ones I've processed are mostly via some IDL procedures that I put together.
+Other images available from various groups and individuals
+on the internet are
+being used "as-is".
+The 
+images (in cylindrical projection)
+are generally centered on +/-180 degrees longitude and are
+2K (2048x1024) pixels in size unless otherwise noted.
+Several of the satellites are modeled as triaxial ellipsoids. In
+these cases the maps are constructed on the ellipsoid 
+using planetocentric coordinates.
+Some of these are works in progress to be updated in the future.
+
+<p>
+<center>
+<a href="#MERCURY">Mercury</a> |
+<a href="#VENUS">Venus</a> |
+<a href="#EARTH">Earth</a> |
+<a href="#MARS">Mars</a> |
+<a href="#ASTEROIDS">Asteroid Belt</a> |
+<a href="#COMETS">Comets</a> |
+<a href="#JUPITER">Jupiter</a> |
+<a href="#SATURN">Saturn</a> |
+<a href="#URANUS">Uranus</a> |
+<a href="#NEPTUNE">Neptune</a> |
+<a href="#PLUTO">Pluto</a> |
+<a href="#UNIVERSE">Universe</a> 
+</center>
+
+
+<A NAME="SATURN"</a>
+
+<center><h2>Saturn</h2></center>
+
+We are using a map of 
+<a href="https://bjj.mmedia.is/data/saturn/index.html">Saturn</a>
+from 
+<a href="https://bjj.mmedia.is/data/planetary_maps.html">Bjorn Jonsson's</a>
+web site.
+
+<p>
+Following is a series of satellite maps representing a combination of Voyager and Cassini spacecraft
+imagery. Navigation information used in reprojecting 
+Cassini images was obtained in part
+from Mark Showalter's Cassini Satellite ephemeris website. 
+A helpful 
+<a href="http://www.planetary.org/explore/topics/cassini_huygens/data_iss.html">image summary</a>
+is being used courtesy of The Planetary Society.
+Matching of topographic
+features was also done to help in registering the images.
+It is anticipated that the typical accuracy of the navigation of 
+the images is roughly within the 1-2 degree range.
+Please note that some of the Cassini images used are "raw" images that are uncalibrated and unprocessed.
+
+<A NAME="MIMAS"</a>
+<center><h3>
+Mimas
+<br>
+</center></h3>
+<p>
+Below is a map of Mimas I constructed by
+reprojecting and overlaying about 15 Cassini images representing
+~90% coverage on top of the official mosaic found on the Cassini web site (used for ~10% coverage). 
+The Cassini images and mosaics are from NASA/JPL/<a href="http://ciclops.org">Space Science Institute</a>.  
+
+<p><center>
+<a href="saturn/mimas/mimas_rgb_cyl_www.jpg">
+<img align=center src="saturn/mimas/mimas_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/mimas/mimas_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/mimas/mimas_rgb_cyl_www.png">PNG</a>,
+<a href="features/combined_mimas_lon_zero_center.png">PNG (with feature labels)</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 12/20/2012)</span>
+</center>
+
+<A NAME="ENCELADUS"</a>
+<center><h3>
+Enceladus
+<br>
+</center></h3>
+Below is an 8K map of Enceladus I constructed by
+reprojecting and overlaying about 50 Cassini
+images
+on top of a 
+<a href="/albers/sos/saturn/enceladus/enceladus.jpg">previous map</a> 
+using Voyager images from
+<a href="http://www.ssc.uwo.ca/geography/spacemap/contents.htm">Philip J. Stooke</a>
+and
+<a href="http://home.arcor.de/jimpage/saturn.html">Jens Meyer</a>.
+Two Cassini raw images from a mid-January 2005 flyby were used along with 
+eight "raw preview" images, three "raw" images,
+one raw wide-angle image and one mosaic from a mid-February 2005 flyby.
+Nine PDS images, three raw preview images, two false color images, a high-res mosaic, and one raw image
+were used from the March 2005 flyby. An untargeted flyby in May 2005 provided a look at
+the south polar region. 
+About a dozen images (a combination of PDS, raw, and processed)
+from the July 2005 flyby dramatically improved the south polar coverage.
+Images from November 2006 and September 2007 are included. A few images from
+the March, August, and October 2008 flybys are also being utilized as well as
+from November 2009.
+Color information from a regional mosaic is being added.
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+Navigation information from the PDS
+along with 
+an Enceladus map from the JPL Photojournal (PIA08417) 
+was used to help position many of the images.
+Thanks to Jason Perry of the University of Arizona and Emily Lakdawalla of the
+Planetary Society for help with the PDS data/images.  
+
+<p><center>
+<a href="saturn/enceladus/enceladus_rgb_cyl_www.jpg">
+<img align=center src="saturn/enceladus/enceladus_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/enceladus/enceladus_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/enceladus/enceladus_rgb_cyl_www.png">PNG</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 12/18/2009)</span>
+</center>
+
+<center><h3>
+Enceladus Map Sheet
+<br>
+</center></h3>
+Here is an earlier version (from 2/23/2006) 
+of the Enceladus image shown above presented as a map sheet. 
+This includes polar and cylindrical projections
+along with feature labels. The map sheet processing was done by Jason Perry from the University of Arizona.
+
+<p><center>
+<a href="saturn/enceladus/Enceladus_map.jpg">
+<img align=center src="saturn/enceladus/Enceladus_map_thumb.jpg">
+</a>
+<br>
+<a href="saturn/enceladus/Enceladus_map.jpg">Full Size</a>,
+<a href="saturn/enceladus/Enceladus_map_50.jpg">Half Size</a>
+-
+<span style="color: rgb(0, 0, 255);">(image updated 11/22/2006)</span>
+</center>
+
+<!-- Note thumbnail image is resized by 6% -->
+
+<p>
+I'm currently working on a <a href="features/combined_enceladus_lon_180_center.jpg">
+feature overlay</a>. 
+This is a 4K image with the feature names on top
+where the fonts are "pre-distorted" to display well on SOS, Celestia, etc.
+<span style="color: rgb(0, 0, 255);">(updated 2/25/2012)</span>.
+
+<A NAME="TETHYS"</a>
+<center><h3>
+Tethys
+<br>
+</center></h3>
+Below is a 4k map of Tethys I constructed by
+reprojecting and overlaying a high-resolution <a href="http://ciclops.lpl.arizona.edu/view.php?id=576">Cassini
+mosaic</a> from a recent flyby on 
+top of a 
+<a href="/albers/sos/saturn/tethys/tethys.jpg">previous map</a> 
+using Voyager images from
+<a href="http://home.arcor.de/jimpage/saturn.html">Jens Meyer</a>
+. 
+At high sun angles, the color from the Cassini image was merged with the intensity from the Voyager map. 
+In addition two raw B&W images are included from March 9, 2005, one raw image from June 27, 2005
+as well as processed images from Dec 15, 2004 and May 20, 2005.
+A <a href="http://ciclops.org/view.php?id=1506">mosaic</a> was added from the September 24, 2005 flyby. 
+Raw images are included from the December 2005 and
+February 2006 flybys, including an improved view of Odysseus.
+Data from July 23, 2006,
+<!--
+(including a mosaic by "Exploit-Corporations" from UnmannedSpaceflight.com), 
+-->
+September 25, 2006, June 2007, July 2007, August
+2007, September 2007, and September 2008 have been added.
+A processed color image (from Gordan Ugarkovic) plus some raw images
+are included from May 2008. A Dec 2008 processed image by "Exploit
+Corporations" of Unmannedspaceflight.com was utilized.
+A <a href="http://photojournal.jpl.nasa.gov/catalog/PIA07781">Cassini imaging team produced map</a> was used as a positional reference.
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+
+<p><center>
+<a href="saturn/tethys/tethys_rgb_cyl_www.jpg">
+<img align=center src="saturn/tethys/tethys_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/tethys/tethys_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/tethys/tethys_rgb_cyl_www.tif">TIFF</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 12/19/2008)</span>
+</center>
+
+
+<A NAME="DIONE"</a>
+<center><h3>
+Dione
+<br>
+</center></h3>
+Below is an 8K map of Dione I constructed by
+reprojecting and overlaying images from recent Cassini flybys
+on top of a 
+<a href="/albers/sos/saturn/dione/dione.jpg">previous map</a> 
+using Voyager images made by
+<a href="http://www.lpi.usra.edu/science/schenk/schenk.html">Paul Schenk</a>
+of the Lunar and Planetary Institute.
+A Voyager image processed by 
+<a href="http://www.strykfoto.org/outericymoons/vdionef.png">
+Ted Stryk 
+</a>
+was also incorporated.
+A <a href="http://ciclops.org/view.php?id=1583">mosaic</a> was added along with a raw image from the October 11, 2005 flyby. 
+A raw image is included from the September 30, 2007 flyby as well as a mosaic
+constructed by "nick1drake" of UnmannedSpaceflight.com.
+With the September 2010 flyby showing some northern regions, a mosiac by
+"Exploitcorporations" of UnmannedSpaceflight.com was used along with a couple of Saturnshine raw images.
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+
+<p><center>
+<a href="saturn/dione/dione_rgb_cyl_www.jpg">
+<img align=center src="saturn/dione/dione_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/dione/dione_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/dione/dione_rgb_cyl_www.png">PNG</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 10/22/2010)</span>
+</center>
+
+<A NAME="RHEA"</a>
+<center><h3>
+Rhea
+<br>
+</center></h3>
+Below is an 8K map of Rhea I constructed by
+reprojecting and overlaying images from recent Cassini flybys.
+Positional information was obtained from a variety of sources, including
+spacecraft navigation data, a 
+<a href="/albers/sos/saturn/rhea/sat5vss2.jpg">previous USGS map</a> 
+consisting of Voyager images
+(from <a href="http://maps.jpl.nasa.gov/saturn.html">
+David Seal's</a> web site at JPL), and the official map on the Space Science Institute web site.
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+
+<p><center>
+<a href="saturn/rhea/rhea_rgb_cyl_www.jpg">
+<img align=center src="saturn/rhea/rhea_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/rhea/rhea_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/rhea/rhea_rgb_cyl_www.png">PNG</a>-
+<a href="features/combined_rhea_lon_zero_center.png">PNG (with feature labels)</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 12/31/2012)</span>
+</center>
+
+
+
+<A NAME="TITAN"</a>
+<center><h3>
+Titan
+<br>
+</center></h3>
+
+Here is a
+<a href="https://www.flickr.com/photos/10795027@N08/43023455582/">Titan map</a> 
+constructed in 2018 from Ian Regan and the USGS using Cassini images.
+
+<!--
+
+Below is a map of Titan I constructed by
+reprojecting and overlaying three high-resolution Cassini
+images/mosaics from recent 2007 flybys on 
+top of a 
+
+<a href="/albers/sos/saturn/titan/titan_fridger.jpg">previous map</a> 
+using lower resolution Saturn approach images from
+<a href="http://www.shatters.net/~t00fri/texfoundry.php4">Fridger Schrempp</a>
+and the 
+previous (December 2006) map from the
+<a href="http://photojournal.jpl.nasa.gov/catalog/PIA08346">NASA Cassini mission</a>
+. The image from October 22, 2007 was post-processed by Gordan Ugarkovic.
+-->
+
+<!--
+One mosaic and one single image were used from the T0 flyby together with
+one mosaic and one single image from the TA flyby, as processed by
+the 
+<a href="http://ciclops.org">CICLOPS Cassini imaging team
+</a>. A mosaic from T4 was also utilized.
+-->
+
+The black & white images were generally taken through near infrared and polarizing filters to
+pierce the haze on Titan.
+<!--
+
+<p><center>
+<a href="saturn/titan/titan_rgb_cyl_www.jpg">
+<img align=center src="saturn/titan/titan_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/titan/titan_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/titan/titan_rgb_cyl_www.tif">TIFF</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 7/8/2008)</span>
+</center>
+
+<p>
+-->
+
+In addition we are using a 
+<a href="ftp://public.sos.noaa.gov/astronomy/titan/radar_swaths/4k_trans.png">map of Titan</a> 
+with radar from the USGS.               
+<!--
+
+We have an earlier colorized version of this 
+<span style="color: rgb(0, 0, 255);">(4/14/2005)</span>
+<a href="http://sos.noaa.gov/Datasets/dataset.php?id=256">map of Titan</a>
+created by Celestia Software developer 
+<a href="http://www.shatters.net/~t00fri/texfoundry.php4">Fridger Schrempp</a>.
+Fridger produced this by combining a variety of mosaics and other imagery
+from NASA's Cassini mission.
+<p>
+-->
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/home/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+
+
+<A NAME="IAPETUS"</a>
+<center><h3>
+Iapetus
+<br>
+</center></h3>
+Below is an 8K map of Iapetus I constructed by
+reprojecting and overlaying preliminary images from recent Cassini flybys
+on top of a 
+<a href="/albers/sos/saturn/iapetus/iapetus.jpg">previous USGS map</a> 
+consisting of Voyager images. Four color images and several black and white
+images, including two illuminated by Saturnshine are included from Cassini.
+A December 2004 image post-processed by Gordan Ugarkovic has been included.
+Several images are now included from the November 2005 (including one
+post-processed by Ted Stryk),
+January 2006, April 2006, July 2007, non-targeted flybys. 
+A couple of leading hemisphere images are included from the September 2007
+targeted flyby.
+An image from the Voyager mission (processed by Ted Stryk) is 
+being used in the northern hemisphere. 
+A super-resolution Cassini view featuring the southern hemisphere
+processed by 
+<a href="http://www.unmannedspaceflight.com/index.php?s=&showtopic=2410&view=findpost&p=47021">
+Ted Stryk 
+</a>
+is included from the July 2004 flyby.
+Thanks to Gordan Ugarkovic for his June 26, 2006 processed PDS image that
+was helped with navigation on the Saturn facing hemisphere. A July 8, 2007 stacked image
+by "Ian R" from unmannedspaceflight.com was also used for navigation.
+The September 2007 flyby is included with a number of 
+raw images, two press release mosaics, as well as a
+portions of several large mosaics constructed from raw and PDS
+imagery by Gordan Ugarkovic.
+Imagery from September 2009 is included.
+The Cassini images are from
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+The color balance in the various component images was adjusted to
+blend
+into the hue and saturation present in the "near-true" color image  
+<a href="http://photojournal.jpl.nasa.gov/catalog/PIA06167">PIA06167</a>.
+
+<p><center>
+<a href="saturn/iapetus/iapetus_rgb_cyl_www.jpg">
+<img align=center src="saturn/iapetus/iapetus_rgb_cyl_thumb.jpg">
+</a>
+<br>
+<a href="saturn/iapetus/iapetus_rgb_cyl_www.jpg">JPEG</a>,
+<a href="saturn/iapetus/iapetus_rgb_cyl_www.png">PNG</a>-
+<span style="color: rgb(0, 0, 255);">(image updated 9/30/2009)</span>
+</center>
+
+
+
+<A NAME="PHOEBE"</a>
+
+<center><h3>
+Phoebe
+<br>
+</center></h3>
+We are using 
+<a href="http://photojournal.jpl.nasa.gov/catalog/PIA07775">
+this map 
+</a>
+of Phoebe produced by 
+the Cassini mission imaging team (CICLOPS), in association with 
+NASA
+/
+<a href="http://saturn.jpl.nasa.gov/multimedia/images/raw/index.cfm">JPL</a>
+/
+<a href="http://ciclops.org">Space Science Institute</a>.
+
+<p>
+
